@@ -27,13 +27,16 @@ public class Loginpage {
 	@FindBy (xpath=" ")
 	WebElement reset_button;
 	
+	@FindBy(xpath="added by someone")
+	WebElement some_one;
+	
 	public boolean isLoginPageDisplayed() {
 		
 		username_txt.isDisplayed();
 		password_txt.isDisplayed();
 		login_button.isDisplayed();
 		option_link.isDisplayed();
-	    reset_button.isDisplayed();
+	    reset_button.isSelected();
 	    return true;
 	}
 	public void admimLogin(String username, String password) {
