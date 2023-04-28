@@ -27,6 +27,9 @@ public class Loginpage {
 	@FindBy (xpath=" ")
 	WebElement reset_button;
 	
+	@FindBy (xpath="added at WD")
+	WebElement atmy_location;
+	
 	public boolean isLoginPageDisplayed() {
 		
 		username_txt.isDisplayed();
