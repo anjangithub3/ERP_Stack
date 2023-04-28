@@ -29,6 +29,8 @@ public class Loginpage {
 	
 	@FindBy (xpath="added at WD")
 	WebElement atmy_location;
+	@FindBy(xpath="added by someone")
+	WebElement some_one;
 	
 	public boolean isLoginPageDisplayed() {
 		
